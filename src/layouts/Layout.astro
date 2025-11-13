@@ -15,7 +15,7 @@ const { title = "Astro", description = "" } = Astro.props;
 
   <body class="flex min-h-screen flex-col bg-gray-50 text-gray-900 antialiased">
     <!-- Header -->
-    <header class=" bg-white ">
+    <header class="mb-4 bg-white shadow-lg">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <a href="/home" class="flex items-center">
           <img 
@@ -25,16 +25,19 @@ const { title = "Astro", description = "" } = Astro.props;
             loading="lazy"
           />
         </a>
-        <nav class="space-x-4 text-sm text-gray-600">
-          <a href="/home" class="hover:text-indigo-600 transition-colors">Inicio</a>
-          <a href="/contacto" class="hover:text-indigo-600 transition-colors">Contacto</a>
-          <a href="/" class="hover:text-indigo-600 transition-colors">Logout</a>
+        <nav class="space-x-4 text-md text-gray-600">
+          <a href="/home" class="hover:text-blue-900 transition-colors font-bold">Inicio</a>
+          <a href="/contacto" class="hover:text-blue-900 transition-colors font-bold">Contacto</a>
+          <a href="/" class="hover:text-red-600 transition-colors inline-flex items-center gap-1 font-bold ">
+
+            Logout
+          </a>
         </nav>
       </div>
     </header>
 
     <!-- Main -->
-    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8 bg-gray-50">
+    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-8 bg-transparent">
       <slot />
     </main>
 
