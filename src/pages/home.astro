@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ItemList from "../components/ItemList";
+import items from "../data/items.json";
+const title = "Inicio | Demo SSR";
+const description = "Listado con búsqueda y filtros renderizado con React.";
+---
+
+<Layout title={title} description={description}>
+  <h1 class="mb-6 text-3xl font-bold">Productos</h1>
+  <ItemList client:visible items={items} />
+</Layout>

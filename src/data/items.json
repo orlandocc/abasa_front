@@ -1,0 +1,62 @@
+[
+{
+"id": 1,
+"slug": "widget-alfa",
+"title": "Widget Alfa",
+"category": "Widgets",
+"price": 29.99,
+"short": "Un widget confiable para el uso diario.",
+"description": "El Widget Alfa es una solución versátil diseñada para facilitar tus tareas diarias. Con materiales de alta calidad y un diseño ergonómico, este widget se adapta perfectamente a cualquier entorno de trabajo. Su durabilidad garantiza un rendimiento óptimo incluso en las condiciones más exigentes. Ideal para uso profesional y doméstico.",
+"image": "https://picsum.photos/seed/widget-alfa/800/600"
+},
+{
+"id": 2,
+"slug": "dispositivo-beta",
+"title": "Dispositivo Beta",
+"category": "Dispositivos",
+"price": 49.0,
+"short": "Dispositivo compacto con gran rendimiento.",
+"description": "El Dispositivo Beta es la combinación perfecta entre tamaño reducido y alto rendimiento. Su diseño compacto lo hace ideal para llevarlo a cualquier lugar, mientras que su potente procesador garantiza un funcionamiento fluido en cualquier tarea. Con una duración de batería excepcional y conectividad de última generación, este dispositivo se adapta a las necesidades de los usuarios más exigentes.",
+"image": "https://picsum.photos/seed/dispositivo-beta/800/600"
+},
+{
+"id": 3,
+"slug": "herramienta-gamma",
+"title": "Herramienta Gamma",
+"category": "Herramientas",
+"price": 19.5,
+"short": "Herramienta versátil para múltiples tareas.",
+"description": "La Herramienta Gamma es el compañero ideal para cualquier proyecto. Su diseño multifuncional te permite realizar una amplia gama de tareas con una sola herramienta. Fabricada con acero endurecido y mangos ergonómicos, ofrece durabilidad y comodidad incluso en las sesiones de trabajo más largas. Incluye sistema de ajuste rápido y funda protectora para un almacenamiento seguro.",
+"image": "https://picsum.photos/seed/herramienta-gamma/800/600"
+},
+{
+"id": 4,
+"slug": "widget-delta",
+"title": "Widget Delta",
+"category": "Widgets",
+"price": 39.25,
+"short": "Widget premium con características extra.",
+"description": "El Widget Delta representa la excelencia en su categoría, diseñado para aquellos que buscan lo mejor. Incluye características avanzadas como sincronización en tiempo real, actualizaciones automáticas y compatibilidad con múltiples plataformas. Su construcción en aluminio anodizado no solo es visualmente atractiva, sino que también proporciona una durabilidad excepcional. Ideal para uso profesional donde la precisión y confiabilidad son fundamentales.",
+"image": "https://picsum.photos/seed/widget-delta/800/600"
+},
+{
+"id": 5,
+"slug": "widget-epsilon",
+"title": "Widget Epsilon",
+"category": "Widgets",
+"price": 35.22,
+"short": "Widget económico con excelente relación calidad-precio.",
+"description": "El Widget Epsilon ofrece un equilibrio perfecto entre funcionalidad y asequibilidad. Diseñado pensando en la simplicidad y eficiencia, este widget es ideal para usuarios que buscan una solución confiable sin complicaciones. Su interfaz intuitiva y características bien pensadas lo convierten en una excelente opción para quienes se inician en el uso de este tipo de herramientas. Incluye garantía de 1 año y soporte técnico gratuito.",
+"image": "https://picsum.photos/seed/widget-epsilon/800/600"
+},
+{
+"id": 6,
+"slug": "widget-zeta",
+"title": "Widget Zeta",
+"category": "Widgets",
+"price": 129.25,
+"short": "La opción profesional con características avanzadas.",
+"description": "El Widget Zeta es nuestra oferta más avanzada, diseñada para profesionales que exigen el máximo rendimiento. Con procesamiento de última generación, conectividad inalámbrica de alta velocidad y una batería de larga duración, este widget está construido para manejar las tareas más exigentes. Su diseño modular permite personalizaciones según necesidades específicas, y su construcción premium garantiza durabilidad incluso en entornos desafiantes. Incluye actualizaciones de software de por vida y soporte prioritario.",
+"image": "https://picsum.photos/seed/widget-zeta/800/600"
+}
+]

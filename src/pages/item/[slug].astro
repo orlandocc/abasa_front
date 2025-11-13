@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import items from "../../data/items.json";
+export const prerender = false;
+
+const { slug } = Astro.params;
+const item = items.find((i) => i.slug === slug);
+
+if (!item) {
+  return Astro.redirect("/", 302);
+}
+
+const title = `${item.title} | Demo SSR`;
+const description = item.description;
+---
+
+<Layout title={title} description={description}>
+  <a href="/home" class="text-md text-blue-900 hover:underline">← Volver</a>
+
+  <div class="mt-4 grid gap-6 md:grid-cols-2">
+    {item.image ? (
+      <img src={item.image} alt={item.title} class="h-90 w-full rounded object-cover" />
+    ) : (
+      <div class="flex h-64 items-center justify-center rounded bg-gray-100 text-gray-500">Sin imagen</div>
+    )}
+
+    <div class="space-y-3">
+      <h1 class="text-2xl font-bold">{item.title}</h1>
+      <div class="flex items-center gap-3 text-sm">
+        <span class="rounded bg-gray-100 px-2 py-1 text-gray-700">{item.category}</span>
+        <span class="text-gray-500">${item.price.toFixed(2)}</span>
+      </div>
+      <p class="text-gray-700">{item.description}</p>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+import LoginForm from "../components/LoginForm";
+
+const title = "Ingresar | Demo SSR";
+const description = "Accede para ver el listado de productos.";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
+    <div class="grid min-h-screen md:grid-cols-2">
+      <!-- Imagen solo en pantallas md+ -->
+      <div class="relative hidden md:block">
+        <img
+          src="https://picsum.photos/id/237/1920/1080"
+          alt="Login visual"
+          class="h-full w-full object-cover"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-tr from-indigo-700/40 to-transparent" />
+      </div>
+
+      <!-- Formulario -->
+      <div class="flex items-center justify-center p-8">
+        <div class="w-full max-w-sm rounded-xl border border-gray-100 bg-white p-15 shadow">          
+          <div class="mb-4 flex justify-center">
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              class="h-10 w-auto"
+              loading="lazy"
+            />
+          </div>
+
+          <h1 class="mb-2 text-2xl font-bold text-center pt-5" >Bienvenido</h1>
+          <p class="mb-6 text-sm text-gray-600 text-center">Inicia sesión para continuar en el demo Astro Abasa</p>         
+
+          <LoginForm client:load />
+          <h6 class="mb-2 text-lg font-normal text-center text-gray-400 pt-5">Usuario: admin</h6>
+          <h6 class="mb-2 text-lg font-normal text-center text-gray-400">Contraseña: admin123</h6>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
